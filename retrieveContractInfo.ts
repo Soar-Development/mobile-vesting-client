@@ -3,10 +3,10 @@ import { getContractInfo } from './main';
 import BN from 'bn.js';
 
 // Your RPC connection
-const connection = new Connection('https://api.devnet.solana.com');
+const connection = new Connection('https://api.mainnet-beta.solana.com');
 
 // Replace with the vesting account public key
-const VESTING_ACCOUNT_PUBLIC_KEY = new PublicKey('64Ew9yBixQuKoaH4k471euDv7d1emMsfZ4mVsUzjqDcs');
+const VESTING_ACCOUNT_PUBLIC_KEY = new PublicKey(''); //fetch it from https://airdrop.soarchain.com/SolanaWallet?wallet=
 
 /** Decode BN timestamp to a human-readable date */
 const decodeTimestamp = (timestamp: BN): string => {
